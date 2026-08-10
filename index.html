@@ -256,7 +256,7 @@
                         placeholder="Contact Number" 
                         required
                         class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   name=""Phone No.
+                   name="Phone No".
                         >
                     <textarea 
                         placeholder="Message" 
@@ -303,46 +303,49 @@
         // });
     </script> 
 
-    <p id="responseMessage"></p>
+    <p id="responseMessage" class="mt-4 text-center text-sm font-semibold"></p>
 
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwHuZpzgKSjxoo3WsMl9jiGWuBEMdKc9mdm74uV0dmK9cX3pUlosPASpvlaUrb1ted18g/exec';
-    const form = document.getElementById('contactForm');
-    const responseMsg = document.getElementById('responseMessage');
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwHuZpzgKSjxoo3WsMl9jiGWuBEMdKc9mdm74uV0dmK9cX3pUlosPASpvlaUrb1ted18g/exec';
+  const form = document.getElementById('contact-form'); // Matches <form id="contact-form">
+  const responseMsg = document.getElementById('responseMessage');
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      responseMsg.textContent = "Sending...";
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    responseMsg.textContent = "Sending...";
+    responseMsg.className = "mt-4 text-center text-sm font-semibold text-blue-600";
 
-      const formData = {
-        name: form.name.value,
-        email: form.email.value,
-        message: form.message.value
-      };
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,     // Uses name="phone"
+      message: form.message.value
+    };
 
-      try {
-        // text/plain prevents CORS preflight issues with Apps Script redirect URLs
-        const response = await fetch(scriptURL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-          body: JSON.stringify(formData)
-        });
+    try {
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(formData)
+      });
 
-        const result = await response.json();
-        
-        if (result.status === 'success') {
-          responseMsg.textContent = "Thank you! Your message has been sent.";
-          form.reset();
-        } else {
-          responseMsg.textContent = "Error submitting form. Please try again.";
-        }
-      } catch (error) {
-        responseMsg.textContent = "Error submitting form. Please check network connection.";
-        console.error('Error:', error);
+      const result = await response.json();
+      
+      if (result.status === 'success') {
+        responseMsg.textContent = "Thank you! Your message has been sent.";
+        responseMsg.className = "mt-4 text-center text-sm font-semibold text-green-600";
+        form.reset();
+      } else {
+        responseMsg.textContent = "Error submitting form. Please try again.";
+        responseMsg.className = "mt-4 text-center text-sm font-semibold text-red-600";
       }
-    });
-  </script>
-
+    } catch (error) {
+      responseMsg.textContent = "Error submitting form. Please check network connection.";
+      responseMsg.className = "mt-4 text-center text-sm font-semibold text-red-600";
+      console.error('Error:', error);
+    }
+  });
+</script>
 
 
 </body>
