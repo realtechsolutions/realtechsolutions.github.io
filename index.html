@@ -236,33 +236,33 @@
                     </div>
                 </div>
                 
-                <form id="contact-form" class="space-y-4" action="">
+                <form id="contact_form" class="space-y-4" action="">
                     <input 
                         type="text" 
                         placeholder="Name" 
                         required
                         class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                       name = "Name"
+                       name = "name"
                         >
                     <input 
                         type="email" 
-                        placeholder="Email" 
+                        placeholder="email" 
                         required
                         class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   name = "Email"
+                   name = "email"
                         >
                     <input 
                         type="tel" 
                         placeholder="Contact Number" 
                         required
                         class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   name="Phone No".
+                   name="phone".
                         >
                     <textarea 
                         placeholder="Message" 
                         required
                         class="w-full p-3 border rounded h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   name = "Message"
+                   name = "message"
                         ></textarea>
                     <button 
                         type="submit" 
@@ -307,7 +307,7 @@
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwHuZpzgKSjxoo3WsMl9jiGWuBEMdKc9mdm74uV0dmK9cX3pUlosPASpvlaUrb1ted18g/exec';
-  const form = document.getElementById('contact-form'); // Matches <form id="contact-form">
+  const form = document.getElementById('contact_form'); // Matches <form id="contact-form">
   const responseMsg = document.getElementById('responseMessage');
 
   form.addEventListener('submit', async (e) => {
