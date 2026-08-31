@@ -306,19 +306,20 @@
     <p id="responseMessage" class="mt-4 text-center text-sm font-semibold"></p>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwHuZpzgKSjxoo3WsMl9jiGWuBEMdKc9mdm74uV0dmK9cX3pUlosPASpvlaUrb1ted18g/exec';
-  const form = document.getElementById('contact_form'); // Matches <form id="contact-form">
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyD-vZbfqorgiZ5fWD_51IU99ICdhtkVZcg5SttNJikslUOwYg31JieG2ORrFHEYg03/exec';
+  const form = document.getElementById('contact_form');
   const responseMsg = document.getElementById('responseMessage');
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
     responseMsg.textContent = "Sending...";
     responseMsg.className = "mt-4 text-center text-sm font-semibold text-blue-600";
 
     const formData = {
       name: form.name.value,
       email: form.email.value,
-      phone: form.phone.value,     // Uses name="phone"
+      phone: form.phone.value,
       message: form.message.value
     };
 
@@ -329,25 +330,33 @@
         body: JSON.stringify(formData)
       });
 
-      const result = await response.json();
-      
+      const text = await response.text();
+      //console.log('Server response:', text);
+
+      let result;
+      try {
+        result = JSON.parse(text);
+      } catch (err) {
+        result = { status: 'error', error: text };
+      }
+
       if (result.status === 'success') {
         responseMsg.textContent = "Thank you! Your message has been sent.";
         responseMsg.className = "mt-4 text-center text-sm font-semibold text-green-600";
-          alert("Thank you! Your message sent successfully")
+        alert("Thank you! Your message sent successfully");
         form.reset();
       } else {
-        responseMsg.textContent = "Error submitting form. Please try again.";
+        responseMsg.textContent = result.error || "Error submitting form. Please try again.";
         responseMsg.className = "mt-4 text-center text-sm font-semibold text-red-600";
+        //console.error('Apps Script returned:', result);
       }
     } catch (error) {
       responseMsg.textContent = "Error submitting form. Please check network connection.";
       responseMsg.className = "mt-4 text-center text-sm font-semibold text-red-600";
-      console.error('Error:', error);
+     // console.error('Fetch error:', error);
     }
   });
 </script>
-
 
 </body>
 </html>
