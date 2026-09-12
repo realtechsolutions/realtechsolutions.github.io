@@ -1,362 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realtech Solutions</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        /* Custom smooth scroll and additional styles */
-        html {
-            scroll-behavior: smooth;
-        }
-        .nav-link:hover {
-            color: #2563eb;
-            transition: color 0.3s ease;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Realtech Solutions builds practical digital products for business, education, and industry.">
+  <title>Realtech Solutions | Practical digital products</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="font-sans text-gray-800">
-    <!-- Header Navigation -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <div class="flex items-center">
-                <img 
-                    src="logo.realtech.png" 
-                    alt="Realtech Solutions Logo" 
-                    class="h-12 w-12 mr-4 rounded-full"
-                >
-                <h1 class="text-2xl font-bold text-blue-600">Realtech Solutions</h1>
-            </div>
+<body>
+  <header class="site-header" data-header>
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Realtech Solutions home"><img src="logo.realtech.png" alt="" width="48" height="48"><span>Realtech <b>Solutions</b></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Toggle menu</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="#about">About</a><a href="#products">Products</a><a href="#contact" class="nav-cta">Start a conversation <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
 
-            <!-- Mobile Menu Toggle -->
-            <button 
-                id="mobile-menu-toggle" 
-                class="md:hidden text-gray-800 focus:outline-none"
-            >
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <!-- Navigation Links -->
-            <nav 
-                id="main-menu"
-                class="hidden md:block absolute md:relative top-full left-0 w-full md:w-auto 
-                    bg-white md:bg-transparent shadow-md md:shadow-none"
-            >
-                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 p-4 md:p-0">
-                    <li><a href="#about" class="nav-link hover:text-blue-600 transition">About</a></li>
-                    <li><a href="#products" class="nav-link hover:text-blue-600 transition">Products</a></li>
-                    <li><a href="#contact" class="nav-link hover:text-blue-600 transition">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="about" class="relative">
-        <div class="bg-blue-50 py-20 text-center">
-            <div class="container mx-auto px-4">
-                <h3 class="text-2xl font-bold mb-6 text-blue-700">
-                    Digital Solutions for Business, Education, and Industries
-                </h3>
-                <p class="max-w-2xl mx-auto text-lg mb-12">
-                    In the fast-growing internet era, technologies are essential for 
-                    businesses, education, and industries to succeed. We provide digital 
-                    solutions to solve everyday problems.
-                </p>
-
-                <!-- Features Grid -->
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                        <div class="text-blue-600 mb-4">
-                            <i class="fas fa-bolt text-5xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">Speeds up Development</h3>
-                        <p>We help businesses rapidly grow by implementing cutting-edge technologies.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                        <div class="text-blue-600 mb-4">
-                            <i class="fas fa-users text-5xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">Who we are</h3>
-                        <p>We specialize in applying internet-based technologies across different sectors.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                        <div class="text-blue-600 mb-4">
-                            <i class="fas fa-cogs text-5xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">What we do</h3>
-                        <p>We create beautiful and functional applications for business, education, and industries.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <main id="top">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal"><p class="eyebrow"><span class="eyebrow-dot"></span> Technology with a useful purpose</p><h1 id="hero-title">Digital tools that make <em>work flow.</em></h1><p class="hero-text">We create clear, dependable software for the moments where business, education, and industry meet.</p><div class="hero-actions"><a class="button button-primary" href="#products">Explore our work <span aria-hidden="true">↓</span></a><a class="text-link" href="#contact">Tell us what you need <span aria-hidden="true">↗</span></a></div><div class="hero-note"><span class="note-mark">+</span><span>Built for real people, real processes, and better everyday decisions.</span></div></div>
+      <div class="hero-art reveal" aria-label="Abstract illustration of connected digital tools" role="img"><div class="art-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-card art-card-main"><span class="card-label">REALTECH / 01</span><strong>Ideas into<br><i>impact.</i></strong><span class="card-line"></span></div><div class="art-card art-card-small"><span class="pulse"></span><strong>Made to move</strong><small>Forward, together</small></div><span class="art-symbol symbol-plus">+</span><span class="art-symbol symbol-dot">•</span></div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="bg-gray-50 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-blue-700">
-                Our Products and Customers
-            </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <img 
-                        src="paperlogo.png" 
-                        alt="PaperCalc Logo" 
-                        class="mx-auto mb-4 rounded-lg"
-                    >
-                    <h3 class="text-xl font-semibold mb-1">PaperCalc</h3>
-                    <h4 class="text-base font-normal mb-4">App.for paper industry professionals.</h4>
-                    <a 
-                        href="https://play.google.com/store/apps/details?id=com.realtechsolns.papercalc" 
-                        target="_blank" 
-                        class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
-                    >
-                        Google Play
-                    </a>
-                </div>               
-                
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <img 
-                        src="calcall.png" 
-                        alt="CalcAll Logo" 
-                     
-                        class="mx-auto mb-4 rounded-lg"
-                    >
-                    <h3 class="text-xl font-semibold mb-4">CalcAll</h3>
-                    <h4 class="text-base font-normal mb-4">All in one calculator.</h4>
-                    <a 
-                        href="https://play.google.com/store/apps/details?id=com.realtechsolns.calcall" 
-                        target="_blank" 
+    <section id="about" class="section section-about" aria-labelledby="about-title"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">The way we work</p><h2 id="about-title">Simple on the surface.<br><em>Thoughtful underneath.</em></h2></div><div class="principles"><article class="principle reveal"><span class="principle-number">01</span><h3>Useful first</h3><p>Technology should remove friction, not add another layer to it. We focus on tools people can understand and use right away.</p></article><article class="principle reveal"><span class="principle-number">02</span><h3>Built to last</h3><p>Small, focused products can create lasting value. We care about solid foundations, sensible details, and dependable results.</p></article><article class="principle reveal"><span class="principle-number">03</span><h3>Close to the work</h3><p>We listen to the people who do the work every day, so the final product fits the process instead of fighting it.</p></article></div></div></section>
 
-                        class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
-                        
-                    >
-                    Google Play
-                       
-                    </a>
-                </div>
+    <section id="products" class="section products-section" aria-labelledby="products-title"><div class="shell"><div class="section-heading products-heading reveal"><div><p class="eyebrow">Selected products</p><h2 id="products-title">Tools with a job<br><em>to do.</em></h2></div><p>From paper mills to everyday calculations, our products turn specialist knowledge into accessible tools.</p></div><div class="product-grid">
+      <article class="product-card product-card-featured reveal"><div class="product-visual visual-paper"><img src="paperlogo.png" alt="PaperCalc logo"></div><div class="product-info"><span class="product-type">Industry / Mobile app</span><h3>PaperCalc</h3><p>Practical calculations for paper industry professionals, wherever the work takes them.</p><a class="card-link" href="https://play.google.com/store/apps/details?id=com.realtechsolns.papercalc" target="_blank" rel="noopener">View on Google Play <span aria-hidden="true">↗</span></a></div></article>
+      <article class="product-card reveal"><div class="product-visual visual-calc"><img src="calcall.png" alt="CalcAll logo"></div><div class="product-info"><span class="product-type">Everyday / Mobile app</span><h3>CalcAll</h3><p>A versatile collection of calculators for the numbers that matter.</p><a class="card-link" href="https://play.google.com/store/apps/details?id=com.realtechsolns.calcall" target="_blank" rel="noopener">View on Google Play <span aria-hidden="true">↗</span></a></div></article>
+      <article class="product-card reveal"><div class="product-visual visual-audit"><img src="auditassist.png" alt="Audit Assist logo"></div><div class="product-info"><span class="product-type">Quality / Mobile app</span><h3>Audit Assist</h3><p>Keep quality checks clear, consistent, and easy to complete on the go.</p><a class="card-link" href="https://play.google.com/store/apps/details?id=in.realtechsolns.auditassist" target="_blank" rel="noopener">View on Google Play <span aria-hidden="true">↗</span></a></div></article>
+      <article class="product-card reveal"><div class="product-visual visual-track"><img src="papertracklogo.png" alt="Papertrack logo"></div><div class="product-info"><span class="product-type">Operations / Desktop app</span><h3>Papertrack</h3><p>Document management with version control and advanced search.</p><a class="card-link" href="https://drive.google.com/file/d/1rlpj6LhYnt5aShyDAa8cKDDTv-XPBqa2/view?usp=sharing" target="_blank" rel="noopener">Download for Windows <span aria-hidden="true">↗</span></a></div></article>
+    </div><div class="customer-strip reveal"><span>Also trusted by</span><a href="http://shribalajiagroproducts.com" target="_blank" rel="noopener">Shri Balaji Agro Products <span>↗</span></a><a href="http://manushreechemicals.in" target="_blank" rel="noopener">Manushree Chemicals <span>↗</span></a></div></div></section>
 
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-         
-                    <img 
-                        src="auditassist.png" 
-                        alt="Audit assist Logo" 
-                        class="mx-auto mb-4 rounded-lg"
-                    >
-                    <h3 class="text-xl font-semibold mb-4">Audit Assist</h3>
-                    <h4 class="text-base font-normal mb-4">App.for conducting qc audits with mobile.</h4>
-                    <a 
-                        href="https://play.google.com/store/apps/details?id=in.realtechsolns.auditassist" 
-                        target="_blank" 
-                        class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
-                   
-                        >
-                        Google Play
-                    </a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <img 
-                        src="globe.png" 
-                        alt="PaperCalc Logo" 
-                        class="mx-auto mb-4 rounded-lg"
-                    >
-                    <h3 class="text-xl font-semibold mb-4">ISO-9001</h3>
-                    <h4 class="text-base font-normal mb-4">App.for understanding ISO-9001 quality standard.</h4>
-                    <a 
-                        href="https://play.google.com/store/apps/details?id=in.realtechsolns.iso_9001" 
-                        target="_blank" 
-                        class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
-                    >
-                        Google Play
-                    </a>
-                </div>   
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <img 
-                        src="papertracklogo.png" 
-                        alt="Papertrack Logo" 
-                        class="mx-auto mb-4 rounded-lg"
-                    >
-                    <h3 class="text-xl font-semibold mb-4">Papertrack </h3>
-                    <h4 class="text-base font-normal mb-4">windows app for document management with auto version control and advanced search.</h4>
-                    <a 
-                        href="https://drive.google.com/file/d/1rlpj6LhYnt5aShyDAa8cKDDTv-XPBqa2/view?usp=sharing" 
-                        target="_blank" 
-                        class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
-                    >
-                        Download Windows desktop app 
-                    </a>
-                </div>        
-                
-                          
-                                
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-4">Shri Balaji Agro Products</h3>
-                    <a 
-                        href="http://shribalajiagroproducts.com" 
-                        target="_blank" 
-                        class="text-blue-600 hover:underline"
-                    >
-                        Visit Website
-                    </a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-4">Manushree Chemicals</h3>
-                    <a 
-                        href="http://manushreechemicals.in" 
-                        target="_blank" 
-                        class="text-blue-600 hover:underline"
-                    >
-                        Visit Website
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-blue-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-blue-700">Contact Us</h2>
-            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
-                <div class="grid md:grid-cols-3 gap-6 mb-8">
-                    <div class="flex items-center">
-                        <i class="fas fa-phone mr-4 text-blue-600"></i>
-                        <span>7520671785</span>
-                    </div>
-                    <div class="flex items-center">
-                        <i class="fas fa-envelope mr-4 text-blue-600"></i>
-                        <span>realtechsolns@gmail.com</span>
-                    </div>
-                    <div class="flex items-center">
-                        <i class="fas fa-map-marker-alt mr-4 text-blue-600"></i>
-                        <span>Vishal Vihar, Saharanpur U.P. 247001</span>
-                    </div>
-                </div>
-                
-                <form id="contact_form" class="space-y-4" action="">
-                    <input 
-                        type="text" 
-                        placeholder="Name" 
-                        required
-                        class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                       name = "name"
-                        >
-                    <input 
-                        type="email" 
-                        placeholder="email" 
-                        required
-                        class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   name = "email"
-                        >
-                    <input 
-                        type="tel" 
-                        placeholder="Contact Number" 
-                        required
-                        class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   name="phone"
-                        >
-                    <textarea 
-                        placeholder="Message" 
-                        required
-                        class="w-full p-3 border rounded h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   name = "message"
-                        ></textarea>
-                    <button 
-                        type="submit" 
-                        class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition"
-                    >
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; <span id="current-year"></span> Realtech Solutions All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-        const mainMenu = document.getElementById('main-menu');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            mainMenu.classList.toggle('hidden');
-        });
-
-        // Dynamic Current Year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Basic Form Submission (you'd replace this with actual backend handling)
-        // const contactForm = document.getElementById('contact-form');
-        // contactForm.addEventListener('submit', (e) => {
-        //     e.preventDefault();
-        //     alert('Thank you for your message! We will get back to you soon.');
-        //     contactForm.reset();
-        // });
-    </script> 
-
-    <p id="responseMessage" class="mt-4 text-center text-sm font-semibold"></p>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyD-vZbfqorgiZ5fWD_51IU99ICdhtkVZcg5SttNJikslUOwYg31JieG2ORrFHEYg03/exec';
-  const form = document.getElementById('contact_form');
-  const responseMsg = document.getElementById('responseMessage');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    responseMsg.textContent = "Sending...";
-    responseMsg.className = "mt-4 text-center text-sm font-semibold text-blue-600";
-
-    const formData = {
-      name: form.name.value,
-      email: form.email.value,
-      phone: form.phone.value,
-      message: form.message.value
-    };
-
-    try {
-      const response = await fetch(scriptURL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-        body: JSON.stringify(formData)
-      });
-
-      const text = await response.text();
-      //console.log('Server response:', text);
-
-      let result;
-      try {
-        result = JSON.parse(text);
-      } catch (err) {
-        result = { status: 'error', error: text };
-      }
-
-      if (result.status === 'success') {
-        responseMsg.textContent = "Thank you! Your message has been sent.";
-        responseMsg.className = "mt-4 text-center text-sm font-semibold text-green-600";
-        alert("Thank you! Your message sent successfully");
-        form.reset();
-      } else {
-        responseMsg.textContent = result.error || "Error submitting form. Please try again.";
-        responseMsg.className = "mt-4 text-center text-sm font-semibold text-red-600";
-        //console.error('Apps Script returned:', result);
-      }
-    } catch (error) {
-      responseMsg.textContent = "Error submitting form. Please check network connection.";
-      responseMsg.className = "mt-4 text-center text-sm font-semibold text-red-600";
-     // console.error('Fetch error:', error);
-    }
-  });
-</script>
-
-</body>
-</html>
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title"><div class="shell contact-layout"><div class="contact-intro reveal"><p class="eyebrow">Have a problem worth solving?</p><h2 id="contact-title">Let’s make<br><em>something useful.</em></h2><p>Tell us a little about what you are working on. We will get back to you soon.</p><div class="contact-details"><a href="mailto:realtechsolns@gmail.com">realtechsolns@gmail.com</a><a href="tel:+917520671785">+91 75206 71785</a><span>Vishal Vihar, Saharanpur<br>U.P. 247001, India</span></div></div><form id="contact_form" class="contact-form reveal"><label for="name">Your name<input id="name" name="name" type="text" autocomplete="name" required placeholder="How should we call you?"></label><label for="email">Email address<input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label><label for="phone">Phone number <span>(optional)</span><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 ..."></label><label for="message">How can we help?<textarea id="message" name="message" rows="4" required placeholder="A few words about your project or question..."></textarea></label><button class="button button-dark" type="submit">Send message <span aria-hidden="true">↗</span></button><p id="responseMessage" class="form-status" role="status" aria-live="polite"></p></form></div></section>
++  </main>
++  <footer class="site-footer"><div class="shell"><span>© <span id="current-year"></span> Realtech Solutions</span><span>Digital products, thoughtfully made.</span><a href="#top">Back to top ↑</a></div></footer>
++  <script src="js/site.js"></script>
++</body>
++</html>
