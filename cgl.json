@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "tests": [
     {
       "id": "ssc_cgl_math_1",
@@ -162,6 +162,328 @@
           "type": "INPUT",
           "correctValue": "4",
           "explanation": "Initial water = $10\\%$ of $20 = 2$ liters. Initial milk = $18$ liters. Let $x$ liters of water be added. $\\frac{2 + x}{20 + x} = \\frac{25}{100} = \\frac{1}{4} \\implies 4(2 + x) = 20 + x \\implies 8 + 4x = 20 + x \\implies 3x = 12 \\implies x = 4$ liters."
+        }
+      ]
+    },
+    {
+      "id": "ssc_cgl_math_2",
+      "title": "SSC CGL Quantitative Aptitude Tier-1 Mock Test 2",
+      "category": "SSC CGL",
+      "durationMinutes": 60,
+      "questions": [
+        {
+          "id": 1,
+          "questionText": "If $x - \\frac{1}{x} = 5$, then find the value of $x^2 + \\frac{1}{x^2}$.",
+          "type": "MCQ",
+          "options": ["27", "23", "25", "29"],
+          "correctAnswerIndex": 0,
+          "explanation": "Squaring both sides: $(x - \\frac{1}{x})^2 = 5^2 \\implies x^2 + \\frac{1}{x^2} - 2 = 25 \\implies x^2 + \\frac{1}{x^2} = 27$."
+        },
+        {
+          "id": 2,
+          "questionText": "In a 60-liter mixture, the ratio of milk and water is 2 : 1. How much water should be added so that the ratio becomes 1 : 2?",
+          "type": "MCQ",
+          "options": ["60 liters", "40 liters", "30 liters", "50 liters"],
+          "correctAnswerIndex": 0,
+          "explanation": "Milk = 40 L, Water = 20 L. Let water added = $w$. $\\frac{40}{20 + w} = \\frac{1}{2} \\implies 80 = 20 + w \\implies w = 60$ liters."
+        },
+        {
+          "id": 3,
+          "questionText": "By selling an article for ₹720, a loss of 10% is incurred. At what price should it be sold to earn a 20% profit?",
+          "type": "MCQ",
+          "options": ["₹960", "₹900", "₹840", "₹1,000"],
+          "correctAnswerIndex": 0,
+          "explanation": "Cost Price = $\\frac{720}{0.9} = ₹800$. Selling Price for 20% profit = $800 \\times 1.2 = ₹960$."
+        },
+        {
+          "id": 4,
+          "questionText": "Pipes A and B can fill a tank in 15 hours and 20 hours, while C can empty it in 30 hours. If all three are opened together, in how many hours will the tank be full?",
+          "type": "MCQ",
+          "options": ["12 hours", "10 hours", "15 hours", "8 hours"],
+          "correctAnswerIndex": 0,
+          "explanation": "Total capacity = 60 units. A's rate = 4, B's = 3, C's = -2. Net rate = $4 + 3 - 2 = 5$ units/hour. Time = $60 / 5 = 12$ hours."
+        },
+        {
+          "id": 5,
+          "questionText": "A car covers 300 km in 5 hours, partly at 50 km/h and partly at 70 km/h. Find the distance covered at 70 km/h.",
+          "type": "MCQ",
+          "options": ["175 km", "125 km", "150 km", "200 km"],
+          "correctAnswerIndex": 0,
+          "explanation": "Let time at 70 km/h be $t$. $50(5-t) + 70t = 300 \\implies 250 + 20t = 300 \\implies 20t = 50 \\implies t = 2.5$ hours. Distance = $70 \\times 2.5 = 175$ km."
+        },
+        {
+          "id": 6,
+          "questionText": "Evaluate: $\\sin^2 30^{\\circ} + \\cos^2 60^{\\circ} + \\tan^2 45^{\\circ}$.",
+          "type": "MCQ",
+          "options": ["1.5", "1", "2", "2.5"],
+          "correctAnswerIndex": 0,
+          "explanation": "$(1/2)^2 + (1/2)^2 + 1^2 = 1/4 + 1/4 + 1 = 1.5$."
+        },
+        {
+          "id": 7,
+          "questionText": "The areas of two similar triangles $\\triangle ABC$ and $\\triangle PQR$ are $64\\text{ cm}^2$ and $121\\text{ cm}^2$. If $QR = 11\\text{ cm}$, find $BC$.",
+          "type": "MCQ",
+          "options": ["8 cm", "9 cm", "7 cm", "6 cm"],
+          "correctAnswerIndex": 0,
+          "explanation": "$\\frac{\\text{Area}(ABC)}{\\text{Area}(PQR)} = (\\frac{BC}{QR})^2 \\implies \\frac{64}{121} = (\\frac{BC}{11})^2 \\implies \\frac{8}{11} = \\frac{BC}{11} \\implies BC = 8\\text{ cm}$."
+        },
+        {
+          "id": 8,
+          "questionText": "Find the compound interest on ₹8,000 at 15% per annum for 2 years, compounded annually.",
+          "type": "MCQ",
+          "options": ["₹2,580", "₹2,400", "₹2,650", "₹2,500"],
+          "correctAnswerIndex": 0,
+          "explanation": "Amount = $8000 \\times (1.15)^2 = 8000 \\times 1.3225 = ₹10,580$. Compound Interest = $10580 - 8000 = ₹2,580$."
+        },
+        {
+          "id": 9,
+          "questionText": "Find the unit digit of $(2137)^{753}$.",
+          "type": "MCQ",
+          "options": ["7", "1", "3", "9"],
+          "correctAnswerIndex": 0,
+          "explanation": "Cyclicity of 7 is 4. $753 \\pmod 4 = 1$. So unit digit is $7^1 = 7$."
+        },
+        {
+          "id": 10,
+          "questionText": "If the price of sugar is increased by 20%, by what percentage should a family reduce consumption to keep expenditure unchanged?",
+          "type": "MCQ",
+          "options": ["16.67%", "20%", "15%", "18.33%"],
+          "correctAnswerIndex": 0,
+          "explanation": "Percentage reduction = $\\frac{20}{100 + 20} \\times 100 = \\frac{20}{120} \\times 100 = 16.67\\%$."
+        },
+        {
+          "id": 11,
+          "questionText": "The mean of 10 numbers is 15. If one number 21 is excluded, what is the new mean?",
+          "type": "MCQ",
+          "options": ["14.33", "14", "13.5", "15"],
+          "correctAnswerIndex": 0,
+          "explanation": "Initial sum = $10 \\times 15 = 150$. New sum = $150 - 21 = 129$. New mean = $129 / 9 = 14.33$."
+        },
+        {
+          "id": 12,
+          "questionText": "The total surface area of a solid hemisphere of radius 7 cm is: (Take $\\pi = 22/7$)",
+          "type": "MCQ",
+          "options": ["462 cm²", "308 cm²", "616 cm²", "154 cm²"],
+          "correctAnswerIndex": 0,
+          "explanation": "Total Surface Area = $3\\pi r^2 = 3 \\times \\frac{22}{7} \\times 49 = 3 \\times 22 \\times 7 = 462\\text{ cm}^2$."
+        },
+        {
+          "id": 13,
+          "questionText": "If $a + b + c = 9$ and $ab + bc + ca = 26$, find $a^2 + b^2 + c^2$.",
+          "type": "MCQ",
+          "options": ["29", "31", "27", "35"],
+          "correctAnswerIndex": 0,
+          "explanation": "$(a+b+c)^2 = a^2+b^2+c^2 + 2(ab+bc+ca) \\implies 81 = a^2+b^2+c^2 + 52 \\implies a^2+b^2+c^2 = 29$."
+        },
+        {
+          "id": 14,
+          "questionText": "Two trains of length 140 m and 160 m are running in opposite directions at 60 km/h and 48 km/h. In how much time will they cross each other?",
+          "type": "MCQ",
+          "options": ["10 seconds", "12 seconds", "8 seconds", "15 seconds"],
+          "correctAnswerIndex": 0,
+          "explanation": "Total distance = $140 + 160 = 300$ m. Relative speed = $60 + 48 = 108$ km/h = $108 \\times \\frac{5}{18} = 30$ m/s. Time = $300 / 30 = 10$ seconds."
+        },
+        {
+          "id": 15,
+          "questionText": "A tangent $PQ$ at a point $P$ of a circle of radius 5 cm meets a line through the center $O$ at a point $Q$ so that $OQ = 12\\text{ cm}$. Find the length of $PQ$.",
+          "type": "INPUT",
+          "correctValue": "10.91",
+          "explanation": "$PQ = \\sqrt{12^2 - 5^2} = \\sqrt{144 - 25} = \\sqrt{119} \\approx 10.91$ cm."
+        },
+        {
+          "id": 16,
+          "questionText": "Find the value of $x$ if $2^{x+3} = 32$.",
+          "type": "INPUT",
+          "correctValue": "2",
+          "explanation": "$32 = 2^5 \\implies x + 3 = 5 \\implies x = 2$."
+        },
+        {
+          "id": 17,
+          "questionText": "A sum of money doubles itself at simple interest in 8 years. What is the rate of interest per annum?",
+          "type": "MCQ",
+          "options": ["12.5%", "10%", "15%", "8%"],
+          "correctAnswerIndex": 0,
+          "explanation": "Simple Interest = Principal. $P = \\frac{P \\times R \\times 8}{100} \\implies R = \\frac{100}{8} = 12.5\\%$."
+        },
+        {
+          "id": 18,
+          "questionText": "Find the median of the data: 12, 17, 11, 19, 15, 13, 20.",
+          "type": "INPUT",
+          "correctValue": "15",
+          "explanation": "In ascending order: 11, 12, 13, 15, 17, 19, 20. The 4th (middle) number is 15."
+        },
+        {
+          "id": 19,
+          "questionText": "Find the area of a triangle with sides 13 cm, 14 cm, and 15 cm.",
+          "type": "INPUT",
+          "correctValue": "84",
+          "explanation": "Semi-perimeter $s = (13+14+15)/2 = 21$. Area = $\\sqrt{21 \\times 8 \\times 7 \\times 6} = 84\\text{ cm}^2$."
+        },
+        {
+          "id": 20,
+          "questionText": "A bag contains 5 red balls and 7 white balls. A ball is drawn at random. What is the probability that the ball drawn is white?",
+          "type": "MCQ",
+          "options": ["7/12", "5/12", "1/2", "7/5"],
+          "correctAnswerIndex": 0,
+          "explanation": "Total balls = 12. White balls = 7. Probability = 7/12."
+        }
+      ]
+    },
+    {
+      "id": "ssc_cgl_math_3",
+      "title": "SSC CGL Quantitative Aptitude Tier-1 Mock Test 3",
+      "category": "SSC CGL",
+      "durationMinutes": 60,
+      "questions": [
+        {
+          "id": 1,
+          "questionText": "If $x^4 + \\frac{1}{x^4} = 119$, find the value of $x + \\frac{1}{x}$.",
+          "type": "INPUT",
+          "correctValue": "3.61",
+          "explanation": "$x^2 + \\frac{1}{x^2} = \\sqrt{119 + 2} = 11$. $x + \\frac{1}{x} = \\sqrt{11 + 2} = \\sqrt{13} \\approx 3.61$."
+        },
+        {
+          "id": 2,
+          "questionText": "Three numbers are in the ratio $2 : 3 : 4$ and the sum of their cubes is 33,957. Find the largest number.",
+          "type": "MCQ",
+          "options": ["28", "21", "14", "35"],
+          "correctAnswerIndex": 0,
+          "explanation": "$(2x)^3 + (3x)^3 + (4x)^3 = 8x^3 + 27x^3 + 64x^3 = 99x^3 = 33957 \\implies x^3 = 343 \\implies x = 7$. Largest number = $4(7) = 28$."
+        },
+        {
+          "id": 3,
+          "questionText": "A trader sells two items for ₹4,000 each, gaining 20% on one and losing 20% on the other. What is his net profit or loss percentage?",
+          "type": "MCQ",
+          "options": ["4% loss", "4% profit", "No profit no loss", "2% loss"],
+          "correctAnswerIndex": 0,
+          "explanation": "Always a loss when selling prices are equal and gain% = loss%. Loss% = $\\frac{20^2}{100} = 4\\%$ loss."
+        },
+        {
+          "id": 4,
+          "questionText": "A and B can complete a work in 10 days and 15 days respectively. They started together, but A left 2 days before completion. In how many days was the total work completed?",
+          "type": "MCQ",
+          "options": ["7.2 days", "6 days", "8 days", "7 days"],
+          "correctAnswerIndex": 0,
+          "explanation": "Total work = 30 units. A = 3 units/day, B = 2 units/day. In last 2 days B worked alone = 4 units. Remaining 26 units done together = $26 / 5 = 5.2$ days. Total time = $5.2 + 2 = 7.2$ days."
+        },
+        {
+          "id": 5,
+          "questionText": "Walking at 60 km/h, a person covers a distance in 4 hours. How much speed should he increase to cover the same distance in 3 hours?",
+          "type": "MCQ",
+          "options": ["20 km/h", "80 km/h", "15 km/h", "25 km/h"],
+          "correctAnswerIndex": 0,
+          "explanation": "Distance = $60 \\times 4 = 240$ km. Required speed = $240 / 3 = 80$ km/h. Speed increase = $80 - 60 = 20$ km/h."
+        },
+        {
+          "id": 6,
+          "questionText": "If $\\sec \\theta + \\tan \\theta = 3$, find the value of $\\sec \\theta - \\tan \\theta$.",
+          "type": "INPUT",
+          "correctValue": "0.33",
+          "explanation": "$\\sec^2\\theta - \\tan^2\\theta = 1 \\implies (\\sec\\theta + \\tan\\theta)(\\sec\\theta - \\tan\\theta) = 1 \\implies \\sec\\theta - \\tan\\theta = 1/3 \\approx 0.33$."
+        },
+        {
+          "id": 7,
+          "questionText": "Find the area of an equilateral triangle whose perimeter is 36 cm.",
+          "type": "INPUT",
+          "correctValue": "62.35",
+          "explanation": "Side $a = 36/3 = 12$ cm. Area = $\\frac{\\sqrt{3}}{4} a^2 = \\frac{\\sqrt{3}}{4} \\times 144 = 36\\sqrt{3} \\approx 62.35\\text{ cm}^2$."
+        },
+        {
+          "id": 8,
+          "questionText": "What sum of money will amount to ₹6,600 in 2 years and to ₹7,200 in 3 years at simple interest?",
+          "type": "MCQ",
+          "options": ["₹5,400", "₹5,000", "₹5,800", "₹6,000"],
+          "correctAnswerIndex": 0,
+          "explanation": "Simple Interest for 1 year = $7200 - 6600 = ₹600$. Interest for 2 years = ₹1,200. Principal = $6600 - 1200 = ₹5,400$."
+        },
+        {
+          "id": 9,
+          "questionText": "Find the total number of prime factors in $2^{10} \\times 3^5 \\times 7^3 \\times 11^2$.",
+          "type": "INPUT",
+          "correctValue": "20",
+          "explanation": "Sum of prime exponents = $10 + 5 + 3 + 2 = 20$."
+        },
+        {
+          "id": 10,
+          "questionText": "Due to a 25% reduction in the price of apples, a customer can buy 2 kg more apples for ₹240. What is the original price per kg?",
+          "type": "MCQ",
+          "options": ["₹40/kg", "₹30/kg", "₹35/kg", "₹45/kg"],
+          "correctAnswerIndex": 0,
+          "explanation": "Reduced price = $25\\%$ of $240 / 2 = 60 / 2 = ₹30$/kg. Original price = $30 / 0.75 = ₹40$/kg."
+        },
+        {
+          "id": 11,
+          "questionText": "Find the mode of the following numbers: 5, 7, 8, 5, 9, 5, 8, 6, 7, 5.",
+          "type": "INPUT",
+          "correctValue": "5",
+          "explanation": "Number 5 appears most frequently (4 times), so mode is 5."
+        },
+        {
+          "id": 12,
+          "questionText": "The volume of a cylinder is $1540\\text{ cm}^3$ and its height is 10 cm. Find its radius. (Take $\\pi = 22/7$)",
+          "type": "MCQ",
+          "options": ["7 cm", "14 cm", "3.5 cm", "10 cm"],
+          "correctAnswerIndex": 0,
+          "explanation": "$\\pi r^2 h = 1540 \\implies \\frac{22}{7} \\times r^2 \\times 10 = 1540 \\implies r^2 = 49 \\implies r = 7\\text{ cm}$."
+        },
+        {
+          "id": 13,
+          "questionText": "If $x + y + z = 0$, find the value of $\\frac{x^2}{yz} + \\frac{y^2}{zx} + \\frac{z^2}{xy}$.",
+          "type": "INPUT",
+          "correctValue": "3",
+          "explanation": "Identity: If $x+y+z=0 \\implies x^3+y^3+z^3 = 3xyz$. $\\frac{x^3+y^3+z^3}{xyz} = \\frac{3xyz}{xyz} = 3$."
+        },
+        {
+          "id": 14,
+          "questionText": "A boat goes 12 km downstream in 48 minutes. If the speed of the current is 3 km/h, find the speed of the boat in still water.",
+          "type": "MCQ",
+          "options": ["12 km/h", "15 km/h", "18 km/h", "9 km/h"],
+          "correctAnswerIndex": 0,
+          "explanation": "Downstream speed = $\\frac{12}{48/60} = 15$ km/h. Speed in still water = $15 - 3 = 12$ km/h."
+        },
+        {
+          "id": 15,
+          "questionText": "If the diagonals of a rhombus are 16 cm and 12 cm, find its perimeter.",
+          "type": "MCQ",
+          "options": ["40 cm", "20 cm", "48 cm", "32 cm"],
+          "correctAnswerIndex": 0,
+          "explanation": "Side $a = \\sqrt{8^2 + 6^2} = \\sqrt{64+36} = 10$ cm. Perimeter = $4 \\times 10 = 40$ cm."
+        },
+        {
+          "id": 16,
+          "questionText": "Find the value of $\\frac{\\tan 65^{\\circ}}{\\cot 25^{\\circ}}$.",
+          "type": "INPUT",
+          "correctValue": "1",
+          "explanation": "$\\tan 65^{\\circ} = \\cot(90-65)^{\\circ} = \\cot 25^{\\circ}$. Ratio = 1."
+        },
+        {
+          "id": 17,
+          "questionText": "Find the compound interest on ₹12,500 for 1.5 years at 8% p.a., compounded half-yearly.",
+          "type": "MCQ",
+          "options": ["₹1,560.80", "₹1,500", "₹1,600", "₹1,480.50"],
+          "correctAnswerIndex": 0,
+          "explanation": "Rate = 4% per half-year, Time = 3 half-years. Amount = $12500 \\times (1.04)^3 = ₹14,060.80$. CI = $14060.80 - 12500 = ₹1,560.80$."
+        },
+        {
+          "id": 18,
+          "questionText": "Find the smallest number which when divided by 12, 16, 18, and 24 leaves a remainder 5 in each case.",
+          "type": "INPUT",
+          "correctValue": "149",
+          "explanation": "LCM(12, 16, 18, 24) = 144. Required number = $144 + 5 = 149$."
+        },
+        {
+          "id": 19,
+          "questionText": "Find the length of the diagonal of a cube whose volume is $512\\text{ cm}^3$.",
+          "type": "INPUT",
+          "correctValue": "13.86",
+          "explanation": "Side $a = \\sqrt[3]{512} = 8$ cm. Diagonal = $a\\sqrt{3} = 8\\sqrt{3} \\approx 13.86$ cm."
+        },
+        {
+          "id": 20,
+          "questionText": "In how many ways can the letters of the word 'MATH' be arranged?",
+          "type": "INPUT",
+          "correctValue": "24",
+          "explanation": "4 distinct letters can be arranged in $4! = 4 \\times 3 \\times 2 \\times 1 = 24$ ways."
         }
       ]
     }
