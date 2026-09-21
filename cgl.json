@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "tests": [
+    {
+      "id": "ssc_cgl_math_1",
+      "title": "SSC CGL Quantitative Aptitude Tier-1 Mock Test 1",
+      "category": "SSC CGL",
+      "durationMinutes": 60,
+      "questions": [
+        {
+          "id": 1,
+          "questionText": "If $x + \\frac{1}{x} = 4$, then find the value of $x^3 + \\frac{1}{x^3}$.",
+          "type": "MCQ",
+          "options": ["52", "64", "48", "54"],
+          "correctAnswerIndex": 0,
+          "explanation": "Using identity: $x^3 + \\frac{1}{x^3} = (x + \\frac{1}{x})^3 - 3(x + \\frac{1}{x}) = 4^3 - 3(4) = 64 - 12 = 52$."
+        },
+        {
+          "id": 2,
+          "questionText": "The ratio of two numbers is 3 : 5. If 9 is subtracted from each, the new ratio becomes 12 : 23. Find the smaller number.",
+          "type": "MCQ",
+          "options": ["27", "33", "45", "55"],
+          "correctAnswerIndex": 1,
+          "explanation": "Let numbers be $3x$ and $5x$. $\\frac{3x - 9}{5x - 9} = \\frac{12}{23} \\implies 23(3x-9) = 12(5x-9) \\implies 69x - 207 = 60x - 108 \\implies 9x = 99 \\implies x = 11$. Smaller number = $3(11) = 33$."
+        },
+        {
+          "id": 3,
+          "questionText": "A shopkeeper marks an article 25% above its cost price and allows a discount of 10% on the marked price. Find his profit percentage.",
+          "type": "MCQ",
+          "options": ["12.5%", "15%", "10%", "17.5%"],
+          "correctAnswerIndex": 0,
+          "explanation": "Net percentage change = $25 - 10 - \\frac{25 \\times 10}{100} = 15 - 2.5 = 12.5\\%$."
+        },
+        {
+          "id": 4,
+          "questionText": "A can do a piece of work in 12 days and B in 18 days. They work together for 4 days, then A leaves. In how many days will B finish the remaining work?",
+          "type": "MCQ",
+          "options": ["6 days", "8 days", "10 days", "7 days"],
+          "correctAnswerIndex": 1,
+          "explanation": "Total work = LCM(12, 18) = 36 units. A's efficiency = 3 units/day, B's efficiency = 2 units/day. Combined efficiency = 5 units/day. Work done in 4 days = $4 \\times 5 = 20$ units. Remaining work = $36 - 20 = 16$ units. Time taken by B = $16 / 2 = 8$ days."
+        },
+        {
+          "id": 5,
+          "questionText": "A train running at a speed of 72 km/h crosses a pole in 15 seconds. What is the length of the train?",
+          "type": "MCQ",
+          "options": ["250 m", "300 m", "350 m", "200 m"],
+          "correctAnswerIndex": 1,
+          "explanation": "Speed in m/s = $72 \\times \\frac{5}{18} = 20$ m/s. Length of train = Speed × Time = $20 \\times 15 = 300$ meters."
+        },
+        {
+          "id": 6,
+          "questionText": "Find the value of $\\frac{\\sin 30^{\\circ} + \\cos 60^{\\circ}}{\\tan 45^{\\circ}}$.",
+          "type": "MCQ",
+          "options": ["1", "0.5", "2", "1.5"],
+          "correctAnswerIndex": 0,
+          "explanation": "$\\sin 30^{\\circ} = 1/2$, $\\cos 60^{\\circ} = 1/2$, $\\tan 45^{\\circ} = 1$. So, $\\frac{1/2 + 1/2}{1} = \\frac{1}{1} = 1$."
+        },
+        {
+          "id": 7,
+          "questionText": "In $\\triangle ABC$, the bisector of $\\angle A$ meets $BC$ at $D$. If $AB = 6\\text{ cm}$, $AC = 8\\text{ cm}$, and $BD = 3\\text{ cm}$, find the length of $DC$.",
+          "type": "MCQ",
+          "options": ["4 cm", "5 cm", "3.5 cm", "4.5 cm"],
+          "correctAnswerIndex": 0,
+          "explanation": "By Angle Bisector Theorem: $\\frac{AB}{AC} = \\frac{BD}{DC} \\implies \\frac{6}{8} = \\frac{3}{DC} \\implies DC = \\frac{8 \\times 3}{6} = 4\\text{ cm}$."
+        },
+        {
+          "id": 8,
+          "questionText": "A sum of ₹10,000 is invested at 10% per annum compound interest, compounded annually. Find the compound interest for 2 years.",
+          "type": "MCQ",
+          "options": ["₹2,100", "₹2,000", "₹2,200", "₹1,900"],
+          "correctAnswerIndex": 0,
+          "explanation": "Amount = $10000 \\times (1 + \\frac{10}{100})^2 = 10000 \\times 1.21 = ₹12,100$. Compound Interest = $12100 - 10000 = ₹2,100$."
+        },
+        {
+          "id": 9,
+          "questionText": "What is the remainder when $7^{84}$ is divided by 342?",
+          "type": "MCQ",
+          "options": ["1", "7", "49", "341"],
+          "correctAnswerIndex": 0,
+          "explanation": "$7^3 = 343 = 342 + 1$. $7^{84} = (7^3)^{28} = (342 + 1)^{28} \\equiv 1^{28} \\equiv 1 \\pmod{342}$."
+        },
+        {
+          "id": 10,
+          "questionText": "A student has to score 33% marks to pass an exam. He gets 125 marks and fails by 40 marks. Find the maximum marks.",
+          "type": "MCQ",
+          "options": ["500", "600", "450", "550"],
+          "correctAnswerIndex": 0,
+          "explanation": "Passing marks = $125 + 40 = 165$. $33\\%$ of Maximum = $165 \\implies \\text{Maximum} = \\frac{165 \\times 100}{33} = 500$."
+        },
+        {
+          "id": 11,
+          "questionText": "The average weight of a class of 30 students is 45 kg. If the weight of the teacher is included, the average weight increases by 1 kg. Find the weight of the teacher.",
+          "type": "MCQ",
+          "options": ["76 kg", "75 kg", "80 kg", "70 kg"],
+          "correctAnswerIndex": 0,
+          "explanation": "Total weight of 30 students = $30 \\times 45 = 1350$ kg. Total weight of 31 people = $31 \\times 46 = 1426$ kg. Weight of teacher = $1426 - 1350 = 76$ kg."
+        },
+        {
+          "id": 12,
+          "questionText": "If the radius of a sphere is doubled, by what percentage does its volume increase?",
+          "type": "MCQ",
+          "options": ["700%", "800%", "600%", "400%"],
+          "correctAnswerIndex": 0,
+          "explanation": "Initial volume $V_1 = \\frac{4}{3}\\pi r^3$. New volume $V_2 = \\frac{4}{3}\\pi (2r)^3 = 8 V_1$. Increase = $7 V_1$. Percentage increase = $\\frac{7 V_1}{V_1} \\times 100 = 700\\%$."
+        },
+        {
+          "id": 13,
+          "questionText": "If $\\alpha$ and $\\beta$ are the roots of the equation $x^2 - 7x + 12 = 0$, find the value of $\\alpha^2 + \\beta^2$.",
+          "type": "MCQ",
+          "options": ["25", "49", "37", "13"],
+          "correctAnswerIndex": 0,
+          "explanation": "$\\alpha + \\beta = 7$, $\\alpha \\beta = 12$. $\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta = 7^2 - 2(12) = 49 - 24 = 25$."
+        },
+        {
+          "id": 14,
+          "questionText": "Walking at $\\frac{3}{4}$ of his usual speed, a man reaches his office 20 minutes late. Find his usual time to reach the office.",
+          "type": "MCQ",
+          "options": ["60 minutes", "80 minutes", "40 minutes", "90 minutes"],
+          "correctAnswerIndex": 0,
+          "explanation": "Speed ratio = $3 : 4$, Time ratio = $4 : 3$. Difference = $1$ unit = $20$ minutes. Usual time ($3$ units) = $3 \\times 20 = 60$ minutes."
+        },
+        {
+          "id": 15,
+          "questionText": "The length of the common chord of two intersecting circles is 24 cm. If the diameters of the circles are 30 cm and 26 cm, find the distance between their centers.",
+          "type": "MCQ",
+          "options": ["14 cm", "17 cm", "21 cm", "12 cm"],
+          "correctAnswerIndex": 0,
+          "explanation": "Radii are $R_1 = 15$ cm, $R_2 = 13$ cm. Half chord $h = 12$ cm. Distance to center 1 = $\\sqrt{15^2 - 12^2} = 9$ cm. Distance to center 2 = $\\sqrt{13^2 - 12^2} = 5$ cm. Total distance = $9 + 5 = 14$ cm."
+        },
+        {
+          "id": 16,
+          "questionText": "If $\\tan \\theta + \\cot \\theta = 2$, find the value of $\\tan^2 \\theta + \\cot^2 \\theta$.",
+          "type": "INPUT",
+          "correctValue": "2",
+          "explanation": "Squaring both sides: $(\\tan \\theta + \\cot \\theta)^2 = 2^2 \\implies \\tan^2 \\theta + \\cot^2 \\theta + 2 \\tan\\theta\\cot\\theta = 4 \\implies \\tan^2 \\theta + \\cot^2 \\theta = 4 - 2 = 2$."
+        },
+        {
+          "id": 17,
+          "questionText": "A sum of ₹8,000 becomes ₹9,200 in 3 years at simple interest. What will it become in 3 years if the rate of interest is increased by 3%?",
+          "type": "MCQ",
+          "options": ["₹9,920", "₹9,800", "₹10,100", "₹9,600"],
+          "correctAnswerIndex": 0,
+          "explanation": "Interest in 3 years = $9200 - 8000 = ₹1200$. Rate $R = \\frac{1200 \\times 100}{8000 \\times 3} = 5\\%$. New rate = $5 + 3 = 8\\%$. New SI = $\\frac{8000 \\times 8 \\times 3}{100} = ₹1920$. New amount = $8000 + 1920 = ₹9,920$."
+        },
+        {
+          "id": 18,
+          "questionText": "Find the HCF of 0.54, 1.8, and 7.2.",
+          "type": "INPUT",
+          "correctValue": "0.18",
+          "explanation": "Express as fractions: $\\frac{54}{100}, \\frac{180}{100}, \\frac{720}{100}$. HCF = $\\frac{\\text{HCF}(54, 180, 720)}{\\text{LCM}(100, 100, 100)} = \\frac{18}{100} = 0.18$."
+        },
+        {
+          "id": 19,
+          "questionText": "In a right-angled triangle $ABC$, right-angled at $B$, if $AB = 5\\text{ cm}$ and $BC = 12\\text{ cm}$, find the length of the altitude drawn from $B$ to hypotenuse $AC$.",
+          "type": "INPUT",
+          "correctValue": "4.61",
+          "explanation": "Hypotenuse $AC = \\sqrt{5^2 + 12^2} = 13$ cm. Area = $\\frac{1}{2} \\times 5 \\times 12 = 30$. Also Area = $\\frac{1}{2} \\times AC \\times h = \\frac{1}{2} \\times 13 \\times h = 30 \\implies h = \\frac{60}{13} \\approx 4.61$ cm."
+        },
+        {
+          "id": 20,
+          "questionText": "A milkman has 20 liters of a mixture of milk and water containing 10% water. How much water should be added to make it 25% water?",
+          "type": "INPUT",
+          "correctValue": "4",
+          "explanation": "Initial water = $10\\%$ of $20 = 2$ liters. Initial milk = $18$ liters. Let $x$ liters of water be added. $\\frac{2 + x}{20 + x} = \\frac{25}{100} = \\frac{1}{4} \\implies 4(2 + x) = 20 + x \\implies 8 + 4x = 20 + x \\implies 3x = 12 \\implies x = 4$ liters."
+        }
+      ]
+    }
+  ]
+}
