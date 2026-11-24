@@ -37,3 +37,6 @@ img { display:block; max-width:100%; }
 }
 +@media (max-width:450px) { .hero h1 { font-size:3.25rem; }.hero-art { min-height:360px; }.art-card-main { transform:rotate(-7deg) scale(.82); transform-origin:left top; }.art-card-small { right:2%; bottom:10%; }.product-card { flex-direction:column; }.product-visual { min-height:150px; }.product-card-featured .product-visual { min-height:190px; }.contact-form { padding:24px 20px; } }
 +@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; }.reveal { opacity:1; transform:none; transition:none; }.button { transition:none; } }
+.product-card-featured { grid-row:auto; flex-direction:row; }
+.product-card-featured .product-visual { width:180px; align-self:center; }
+@media (max-width:450px) { .product-card-featured { flex-direction:column; }.product-card-featured .product-visual { width:auto; align-self:stretch; } }
